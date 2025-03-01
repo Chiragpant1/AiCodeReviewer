@@ -1,115 +1,68 @@
 <h1>AI-Powered Code Reviewer using MERN Stack 🚀</h1><BR>
-# AichatApp
 
-AichatApp is a full-stack application built with a MERN stack (MongoDB, Express, React, Node.js) that allows users to create and manage projects, collaborate with other users, and utilize AI to generate content and review code.
+AI Code Reviewer
 
-## Features
+This project is an AI-powered code reviewer application. It consists of a backend service that uses Google Generative AI to review code and a frontend interface built with React to interact with the AI reviewer.
 
-- User authentication (register, login, logout)
-- Project creation and management
-- Collaborate with other users on projects
-- Real-time messaging within projects
-- AI-powered content generation and code review
 
-## Technologies Used
+## Backend
 
-### Backend
+The backend is built with Node.js and Express. It uses the Google Generative AI API to provide code reviews.
 
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- JWT for authentication
-- Redis for session management
-- Google Generative AI for content generation
+### Installation
 
-### Frontend
-
-- React
-- Vite
-- Tailwind CSS
-- Socket.io for real-time communication
-
-## Installation
-
-### Prerequisites
-
-- Node.js
-- MongoDB
-- Redis
-
-### Backend
-
-1. Navigate to the `backend` directory:
-
+1. Navigate to the `BackEnd` directory:
     ```sh
-    cd backend
+    cd BackEnd
     ```
 
 2. Install the dependencies:
-
     ```sh
     npm install
     ```
 
-3. Create a `.env` file in the [backend](http://_vscodecontentref_/1) directory and add the following environment variables:
-
-    ```env
-    PORT=3000
-    MONGODB_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    GOOGLE_AI_KEY=your_google_ai_key
-    REDIS_HOST=your_redis_host
-    REDIS_PORT=your_redis_port
-    REDIS_PASSWORD=your_redis_password
+3. Create a `.env` file in the [BackEnd](http://_vscodecontentref_/15) directory and add your Google Generative AI API key:
+    ```
+    GOOGLE_GEMINI_KEY=your_api_key_here
     ```
 
-4. Start the backend server:
-
+4. Start the server:
     ```sh
-    npm start
+    node [server.js](http://_vscodecontentref_/16)
     ```
 
-### Frontend
+The backend server will run on `http://localhost:3000`.
 
-1. Navigate to the [frontend](http://_vscodecontentref_/2) directory:
+## Frontend
 
+The frontend is built with React and Vite. It allows users to input code, send it to the backend for review, and display the review.
+
+### Installation
+
+1. Navigate to the `Frontend` directory:
     ```sh
-    cd frontend
+    cd Frontend
     ```
 
 2. Install the dependencies:
-
     ```sh
     npm install
     ```
 
-3. Create a `.env` file in the [frontend](http://_vscodecontentref_/3) directory and add the following environment variables:
-
-    ```env
-    VITE_API_URL=http://localhost:3000
-    ```
-
-4. Start the frontend development server:
-
+3. Start the development server:
     ```sh
     npm run dev
     ```
 
+The frontend application will run on `http://localhost:5173`.
+
 ## Usage
 
-1. Open your browser and navigate to [http://localhost:3000](http://_vscodecontentref_/4) for the backend and [http://localhost:5173](http://_vscodecontentref_/5) for the frontend.
-2. Register a new user or login with an existing account.
-3. Create a new project and invite collaborators.
-4. Use the real-time messaging feature to communicate with your team.
-5. Utilize the AI-powered content generation and code review features to enhance your project.
-
-
+1. Start both the backend and frontend servers.
+2. Open the frontend application in your browser.
+3. Input your code in the editor and click the "Review" button.
+4. The AI-generated review will be displayed on the right side of the screen.
 
 ## License
 
 This project is licensed under the ISC License.
-
-
-
-
